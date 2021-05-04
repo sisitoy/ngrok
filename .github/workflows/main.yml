@@ -10,6 +10,6 @@ jobs:
     - name: Download
       run: |
         wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip -qq -n ngrok-stable-linux-amd64.zip && chmod u+x ngrok
-	- name: install
-	  run: |
-	    ./ngrok authtoken 1qq2xfUQluoYsKhHeSFoutkOP4c_7escTPaiB6jXGNKHRGqmJ && ./ngrok tcp 22
+    - name: install
+      run: |
+	./ngrok authtoken 1qq2xfUQluoYsKhHeSFoutkOP4c_7escTPaiB6jXGNKHRGqmJ && ./ngrok tcp 22
