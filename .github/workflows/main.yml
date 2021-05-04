@@ -1,0 +1,12 @@
+name: learn
+on: [push, pull_request]
+jobs:
+  build:
+    name: learn
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Setup
+      uses: actions/checkout@v1
+    - name: learn
+      run: |
+        wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip ngrok-stable-linux-amd64.zip && chmod u+x ngrok && ./ngrok
