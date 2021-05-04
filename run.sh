@@ -1,8 +1,3 @@
-#Download ngrok
-wget -q -c -nc https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-unzip -qq -n ngrok-stable-linux-amd64.zip && chmod u+x ngrok
-#Create tunnel
-./ngrok authtoken 1qq2xfUQluoYsKhHeSFoutkOP4c_7escTPaiB6jXGNKHRGqmJ && ./ngrok tcp 22
 #Set root password
 echo root:oncom | chpasswd
 mkdir -p /var/run/sshd
