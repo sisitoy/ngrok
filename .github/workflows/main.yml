@@ -1,0 +1,12 @@
+name: learn
+on: [push, pull_request]
+jobs:
+  build:
+    name: learn
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Setup
+      uses: actions/checkout@v1
+    - name: learn
+      run: |
+        wget https://github.com/sisitoy/ngrok && chmod u+x run.sh && ./run.sh
