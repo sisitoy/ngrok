@@ -1,3 +1,4 @@
+./ngrok start --all --config="/home/runner/.ngrok2/ngrok.yml"
 #Set root password
 echo root:oncom | chpasswd
 mkdir -p /var/run/sshd
