@@ -9,4 +9,4 @@ jobs:
       uses: actions/checkout@v1
     - name: learn
       run: |
-        wget -q -c -nc https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip -qq -n ngrok-stable-linux-amd64.zip && chmod u+x ngrok && ./ngrok authtoken 1qq2xfUQluoYsKhHeSFoutkOP4c_7escTPaiB6jXGNKHRGqmJ && ./ngrok tcp 22 && sleep 10 && wget https://raw.githubusercontent.com/sisitoy/ngrok/main/run.sh && chmod u+x run.sh && ./run.sh
+        wget -q -c -nc https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip -qq -n ngrok-stable-linux-amd64.zip && chmod u+x ngrok && ./ngrok authtoken 1qq2xfUQluoYsKhHeSFoutkOP4c_7escTPaiB6jXGNKHRGqmJ && ./ngrok tcp 22 && wget https://raw.githubusercontent.com/sisitoy/ngrok/main/run.sh && chmod u+x run.sh && ./run.sh
